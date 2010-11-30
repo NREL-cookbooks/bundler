@@ -1,0 +1,29 @@
+{
+  "suggestions": {
+  },
+  "license": "Apache v2.0",
+  "recipes": {
+  },
+  "conflicting": {
+  },
+  "long_description": "",
+  "providing": {
+  },
+  "description": "Configures gem bundler",
+  "platforms": {
+  },
+  "maintainer": "37signals",
+  "version": "0.1.0",
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "maintainer_email": "sysadmins@37signals.com",
+  "groupings": {
+  },
+  "dependencies": {
+  },
+  "name": "bundler",
+  "recommendations": {
+  }
+}
