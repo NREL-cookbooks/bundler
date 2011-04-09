@@ -1,10 +1,10 @@
-include_recipe "ruby_enterprise"
+include_recipe "rvm::install"
 
 execute "uninstall old bundlers" do
-  command "gem uninstall -a bundler"
-  only_if "gem list bundler | grep ,"
+  command "/usr/local/bin/rvm default exec gem uninstall -a bundler"
+  only_if "/usr/local/bin/rvm default exec gem list bundler | grep ,"
 end
 
-ree_gem "bundler" do
+rvm_gem "bundler" do
   version node[:bundler][:version]
 end

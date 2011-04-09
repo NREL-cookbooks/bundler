@@ -3,4 +3,4 @@ maintainer_email  "sysadmins@37signals.com"
 description       "Configures gem bundler"
 version           "0.1"
 
-depends "ruby_enterprise"
+depends "rvm"
