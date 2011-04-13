@@ -7,4 +7,5 @@ end
 
 rvm_gem "bundler" do
   version node[:bundler][:version]
+  binary_wrapper "bundle"
 end
