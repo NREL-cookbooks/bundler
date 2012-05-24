@@ -1,11 +1,6 @@
-include_recipe "rvm::install"
+include_recipe "rbenv::global_version"
 
-execute "uninstall old bundlers" do
-  command "/usr/local/rvm/bin/rvm default exec gem uninstall -a bundler"
-  only_if "/usr/local/rvm/bin/rvm default exec gem list bundler | grep ,"
-end
-
-rvm_gem "bundler" do
+rbenv_gem "bundler" do
   version node[:bundler][:version]
-  binary_wrapper "bundle"
+  ruby_version node[:rbenv][:install_global_version]
 end
